@@ -1,7 +1,7 @@
 {
-  "name": "miniflare-typescript-esbuild-jest",
+  "name": "wrangler2-repro-534",
   "version": "1.0.0",
-  "description": "Example project using Miniflare, TypeScript, esbuild and Jest",
+  "description": "https://github.com/cloudflare/wrangler2/issues/534",
   "type": "module",
   "module": "./dist/index.mjs",
   "scripts": {

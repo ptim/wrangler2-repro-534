@@ -9,15 +9,6 @@ workers_dev = true
 compatibility_date = "2021-11-15"
 compatibility_flags = []
 
-[durable_objects]
-bindings = [
-  { name = "COUNTER", class_name = "Counter" }
-]
-
-[[migrations]]
-tag = "v1"
-new_classes = ["Counter"]
-
 [build]
 command = "npm run build"
 
@@ -27,4 +18,3 @@ dir = "dist"
 main = "./index.mjs"
 
 [miniflare]
-durable_objects_persist = true
