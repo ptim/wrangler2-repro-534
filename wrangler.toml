@@ -1,5 +1,5 @@
 name = "wrangler2-repro-534"
-type = "javascript"
+main = "dist/index.mjs"
 
 # set in environment:
 # - CF_ACCOUNT_ID
@@ -9,17 +9,12 @@ workers_dev = false
 
 # `wrangler1 dev` wont work on a subdomain
 # `wrangler2 dev` wont do image resizing
-route = "image-resizing-enabled-zone.com/wrangler2-repro-534*"
+route = "my-image-resizing-enabled-domain.com/*"
 
 compatibility_date = "2021-11-15"
 compatibility_flags = []
 
 [build]
 command = "npm run build"
-
-[build.upload]
-format = "modules"
-dir = "dist"
-main = "./index.mjs"
 
 [miniflare]
